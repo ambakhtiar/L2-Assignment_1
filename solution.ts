@@ -1,4 +1,3 @@
-//Solution: 1
 function formatValue(value: string | number | boolean): string | number | boolean {
     if (typeof value === "string") {
         return value.toUpperCase();
@@ -11,12 +10,7 @@ function formatValue(value: string | number | boolean): string | number | boolea
     }
 }
 
-// console.log(formatValue('heY somaJ'));
-// console.log(formatValue(50));
-// console.log(formatValue(false));
 
-
-//Solution: 2
 function getLength(value: string | Array<any>): number {
     if (typeof value === "string") {
         return value.length;
@@ -27,11 +21,6 @@ function getLength(value: string | Array<any>): number {
     }
 }
 
-// console.log(getLength('typesc gdfgfdri pt'));
-// console.log(getLength([10, 20, "vds", "sdfds", 30, 40]));
-
-
-//Solution: 3
 class Person {
     name: string;
     age: number;
@@ -46,14 +35,7 @@ class Person {
     }
 }
 
-// const person1 = new Person('John Doe', 30);
-// console.log(person1.getDetails());
-// const person2 = new Person('Alice', 25);
-// console.log(person2.getDetails());
 
-
-
-//Solution: 4
 type TBook = {
     title: string;
     rating: number;
@@ -70,10 +52,7 @@ const books = [
     { title: 'Book C', rating: 5.0 },
 ];
 
-// console.log(filterByRating(books));
 
-
-// Solution : 5
 type TUser = {
     id: number;
     name: string;
@@ -96,10 +75,6 @@ const users = [
     { id: 3, name: 'Rumi', email: 'rumi@example.com', isActive: true },
 ];
 
-// console.log(filterActiveUsers(users));
-
-
-// Solution : 6
 interface TBookDetails {
     title: string;
     author: string;
@@ -118,11 +93,7 @@ const myBook: TBookDetails = {
     isAvailable: true,
 };
 
-// printBookDetails(myBook);
 
-
-
-// Solution : 7 
 const getUniqueValues = (a: number[] | string[], b: number[] | string[]): (number | string)[] => {
     let c: (number | string)[] = [];
 
@@ -137,11 +108,7 @@ const getUniqueValues = (a: number[] | string[], b: number[] | string[]): (numbe
 
 const array1 = [1, 2, 4, 5];
 const array2 = [3, 4, 5, 6, 7];
-console.log(getUniqueValues(array1, array2));
 
-
-
-//Solution : 8
 interface TProduct {
     name: string;
     price: number;
@@ -165,8 +132,3 @@ const products = [
     { name: 'Notebook', price: 25, quantity: 3, discount: 10 },
     { name: 'Bag', price: 50, quantity: 1, discount: 20 },
 ];
-
-// console.log(calculateTotalPrice(products));
-
-
-console.log("\n\n\n\n");
