@@ -35,6 +35,10 @@ class Person {
     }
 }
 
+const person1 = new Person('John Doe', 30);
+const person2 = new Person('Alice', 25);
+
+
 
 type TBook = {
     title: string;
